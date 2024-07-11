@@ -1,12 +1,14 @@
--- Show and add orders
-SELECT * FROM items;
-SELECT * FROM orders;
+-- Initial
+DROP TABLE IF EXISTS users;
 
-INSERT INTO orders (item_name, number) VALUES ('apple', 1);
-INSERT INTO orders (item_name, number) VALUES ('apple', 3);
-INSERT INTO orders (item_name, number) VALUES ('pear', 2);
+CREATE TABLE IF NOT EXISTS users (
+    id int not null AUTO_INCREMENT,
+    email varchar(255) not null,
+    name varchar(255),
+    valid_email boolean not null default 0,
+    PRIMARY KEY (id)
+);
 
-SELECT "--";
-
-SELECT * FROM items;
-SELECT * FROM orders;
+INSERT INTO users (email, name) VALUES ("bob@dylan.com", "Bob");
+INSERT INTO users (email, name, valid_email) VALUES ("sylvie@dylan.com", "Sylvie", 1);
+INSERT INTO users (email, name, valid_email) VALUES ("jeanne@dylan.com", "Jeanne", 1);
