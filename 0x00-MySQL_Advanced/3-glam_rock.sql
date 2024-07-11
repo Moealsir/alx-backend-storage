@@ -5,5 +5,5 @@ SELECT band_name,
 	ELSE split - formed
 END AS lifespan
 FROM metal_bands 
-WHERE style = 'Glam rock'
+WHERE FIND_IN_SET('Glam rock', REPLACE(style, ', ', ',')) > 0
 ORDER BY lifespan DESC LIMIT 100;
