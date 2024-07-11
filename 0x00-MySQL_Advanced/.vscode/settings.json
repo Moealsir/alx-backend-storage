@@ -1,0 +1,18 @@
+{
+  "sqltools.connections": [
+    {
+      "mysqlOptions": {
+        "authProtocol": "default",
+        "enableSsl": "Disabled"
+      },
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 3306,
+      "driver": "MySQL",
+      "name": "hbtn_0d_tvshows",
+      "database": "hbtn_0d_tvshows",
+      "username": "root",
+      "password": "Moe@5462"
+    }
+  ]
+}
