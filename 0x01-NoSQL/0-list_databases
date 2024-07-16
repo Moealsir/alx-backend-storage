@@ -1,4 +1,2 @@
-#!/usr/bin/env bash
-// list all databases
+// Lists all MongoDB databases.
 show dbs;
-mkdir -p "0x01-NoSQL" && cd "0x01-NoSQL" && touch README.md  && touch 0-list_databases 1-use_or_create_database 2-insert 3-all 4-match 5-count 6-update 7-delete 8-all.py 9-insert_school.py 10-update_topics.py 11-schools_by_topic.py 12-log_stats.py  && echo "0x01-NoSQL" > README.md && find . -name "*.py" -exec sh -c 'echo "#!/usr/bin/python3" > "{}" && chmod u+x "{}"' \; && find . ! -name "*.*" ! -name "README.md" -type f -exec sh -c 'echo "#!/usr/bin/env bash" > "{}" && chmod u+x "{}"' \;
