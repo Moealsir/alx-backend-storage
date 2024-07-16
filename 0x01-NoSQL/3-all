@@ -1,2 +1,2 @@
 // find all 
-db.school.find()
+db.school.find();

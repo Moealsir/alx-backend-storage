@@ -1,2 +1,2 @@
-// use or create database
-my_db
+// Lists all MongoDB databases.
+use my_db;
