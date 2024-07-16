@@ -1,1 +1,2 @@
-#!/usr/bin/env bash
+// update attributes of a user
+db.school.update({ name: "Holberton school"}, { $set: { "address.street": "972 Mission St." } });
