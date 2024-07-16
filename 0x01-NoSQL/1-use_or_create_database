@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+// use or create database
+my_db
